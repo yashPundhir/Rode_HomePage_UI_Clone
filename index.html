@@ -56,38 +56,62 @@
 	<body>
 		<!-- navbar -->
 		<div
-			class="sticky top-0 bg-white container max-w-7xl h-[108px] border-solid border-gray-200 border-b"
+			class="sticky top-0 bg-white container max-w-7xl lg:h-[108px] border-solid border-gray-200 border-b"
 		>
 			<!-- Navbar Upper -->
 			<div
 				class="navbar-upper container mx-auto max-w-[1200px] border-solid border-gray-400 border-b-[1px] flex flex-row justify-between"
 			>
-				<!-- navbar upper left -->
-				<div class="w-[20px] ml-[45px]">
-					<a class="flex flex-row pt-[5px]" href="#">
-						<!-- Location Icon -->
-						<img
-							src="./Icons/location-point-svgrepo-com.svg"
-							alt="Location Logo"
-						/>
-						<!-- Lang Key -->
-						<span class="ml-[1px] mr-[6px] text-[13px] text-gray-600">EN</span>
-						<!-- Down Arrow Icon -->
-						<img
-							class="w-2"
-							src="./Icons/down-arrow-svgrepo-com.svg"
-							alt="Down Arrow"
-						/>
-					</a>
+				<div class="flex flex-row gap-[20px]">
+					<!-- Hamburger menu -->
+					<div class="lg:hidden mt-[20px] ml-[30px]">
+						<a href="#">
+							<img
+								src="./Icons/menu-hamburger-svgrepo-com.svg"
+								alt="hamburger menu"
+							/>
+						</a>
+					</div>
+					<!-- Language Dropdown -->
+					<div class="w-[20px] lg:ml-[45px] mt-[10px] lg:mt-0">
+						<a class="flex flex-row pt-[5px]" href="#">
+							<!-- Location Icon -->
+							<img
+								class="w-[17px]"
+								src="./Icons/location-point-svgrepo-com.svg"
+								alt="Location Logo"
+							/>
+							<!-- Lang Key -->
+							<span class="ml-[1px] mr-[6px] text-[20px] text-gray-600"
+								>EN</span
+							>
+							<!-- Down Arrow Icon -->
+							<img
+								class="w-[12px]"
+								src="./Icons/down-arrow-svgrepo-com.svg"
+								alt="Down Arrow"
+							/>
+						</a>
+					</div>
 				</div>
-				<!-- navbar upper right -->
-				<div class="w-[22px] mr-[55px]">
+				<!-- Logo -->
+				<div class="text-[34px] font-extrabold mr-[50px] lg:hidden">RØDE</div>
+				<!-- Profile Icon -->
+				<div class="lg:w-[22px] lg:mr-[55px] hidden lg:inline lg:mt-1">
 					<a class="flex flex-row pt-[5px] pb-[3px]" href="#">
 						<img
 							src="./Icons/profile-about-mobile-ui-svgrepo-com.svg"
 							alt="Profile Logo"
 						/>
 					</a>
+				</div>
+				<!-- Search Icon -->
+				<div class="mt-[18px] lg:hidden">
+					<img
+						class="w-[22px] mr-[15px] cursor-pointer lg:hidden"
+						src="./Icons/search-svgrepo-com.svg"
+						alt="Search Icon"
+					/>
 				</div>
 			</div>
 			<!-- Navbar Lower -->
